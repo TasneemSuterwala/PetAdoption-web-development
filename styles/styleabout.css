@@ -1,0 +1,292 @@
+*{
+	margin: o;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+width: 205px;
+position: absolute;
+top: 4%;    /*---image towards up---*/
+left: 5%;  /*---image towards left---*/
+border: 5px solid #00CCFF;
+box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+cursor: pointer;
+}
+
+body{
+color: #;
+background-size: cover;
+background-position: center;
+background-color: #f4e1d2;
+min-height: 515vh;
+}
+
+
+/*-----SIDE NAV----*/
+#sidenav{
+width: 250px;
+height: 515vh;
+position: fixed;
+right: -250px;
+top: 0;
+background: #003366;
+z-index: 2;
+transition: 0.5s;
+}
+nav ul li{
+list-style: none;
+margin: 50px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#menubtn{
+width: 60px;
+height: 60px;
+color: #003366;
+text-align: center;
+position: fixed;
+right: 30px;
+top: 20px;
+border-radius: 3px;
+cursor: pointer;
+z-index: 3px;
+}
+#menubtn img{
+width: 70px;
+margin-top: 15px;
+color: #fff;
+}
+.side-bar{
+width: 50px;
+height: 515vh;
+background: linear-gradient(#003366, #000);/*---#8b4513---*/
+position: absolute;
+right: 0;
+top: 0;
+}
+.social-links img{
+width: 25px;
+margin: 5px auto;
+cursor: pointer;
+border: 2px solid #fff;
+}
+.useful-links img{
+width: 25px;
+margin: 5px auto;
+cursor: pointer;
+border: 2px solid #000;
+}
+.social-links{
+width: 50px;
+text-align: center;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+.useful-links{
+width: 50px;
+text-align: center;
+position: absolute;
+bottom: 30px;
+}
+/*----side nav end---*/
+
+
+/*----media screen ----*/
+@media screen and (max-width: 770px){
+.bannertext h1{
+	font-size: 60px;
+}
+.banner-btn a{
+display: block;
+margin: 20px auto;
+}
+}
+
+/*----media screen end----*/
+
+
+/*----about us----*/
+.contact{
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/*background:url(); 
+background-size: cover;*/
+
+}
+.contact .content{
+max-width:800px;
+text-align: center;
+}
+.contact .content p{
+font-weight: 300;
+color: #fff;
+float: left;
+}
+.container{
+width: 50%;
+display: flex;
+padding: 8px;
+margin: 125px auto;
+}
+.container img{
+float: left;
+height: 505px;
+width: 375px;
+padding: 0 10px 0 0;
+margin-left: -55px;
+}
+.containerr{
+width: 50%;
+display: flex;
+padding: 8px;
+margin: 125px auto;
+}
+.containerr img{
+float: right;
+height: 475px;
+width: 425px;
+padding: 0 10px 0 0;
+margin-right: -335px;
+margin-top: -205px;
+}
+.containerr .boxx .textt img{
+float: right;
+height: 475px;
+width: 425px;
+padding: 0 10px 0 0;
+}
+
+.about h5{
+color: ##391313;
+font-size: 50px;
+font-weight: 555;
+font-family: 'RocknRoll One', sans-serif;
+}
+
+.text{
+	float:right;
+margin-right: -125px;
+font-family: 'Josefin Sans', sans-serif;
+}
+.textt{
+	float:left;
+text-align: justify;
+margin-left: -155px;
+font-family: 'Josefin Sans', sans-serif;
+}
+.boxx .textt{
+	float:left;
+text-align: justify;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*--form--*/
+.container .text .contactForm{
+width: 75%;
+padding: 45px;
+background: #fff;
+}
+.contactForm h2{
+font-size: 45px;
+color: #003366;
+font-weight: 500;
+}
+.contactForm .inputBox{
+position: relative;
+width: 100%;
+margin: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+padding:7px 7px;
+width: 100%;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border: 2px solid #003366;
+outline: none;
+resize: none;
+}
+.contactForm .inputBox span{
+position: absolute;
+left: 0;
+padding:5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span,
+{
+	color: #e91e63;
+	font-size: 13px;
+	transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+cursor: pointer;
+padding: 10px;
+font-size: 13px;
+}
+.container .contactForm .inputBox .btnn{
+width: 195px;
+height: 55px;
+background-color: #007a99;
+float: center;
+color: #fff;
+cursor: pointer;
+font-size: 22px;
+}
+.inputBox label{
+font-weight: 555;
+}
+.container .text h3{
+font-weight: 755;
+font-size: 33px;
+color:  #130a07;
+}
+.containerr .textt h3{
+font-weight: 755;
+font-size: 33px;
+color: #130a07;
+}
+.containerr .textt h4{
+font-size: 29px;
+color:  #fff;
+}
+.containerr .textt i{
+font-size: 33px;
+color:  #003366;
+}
+.containerr .textt p{
+	font-weight: 333;
+font-size: 23px;
+color:  #000;
+}
+.container .text p{
+	font-weight: 333;
+font-size: 23px;
+color:  #000;
+}
+.containerr .textt img{
+display: flex;
+flex: 1;
+float: right;
+height: 405px;
+width: 375px;
+padding: 0 10px 25px 25px;
+}
